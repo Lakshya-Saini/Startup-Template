@@ -1,0 +1,342 @@
+*{ box-sizing: border-box; }
+
+body{ margin: 0; padding: 0; width: 100%; font-family: 'Montserrat',sans-serif; font-weight: 400;}
+
+.no-js #loader { display: none;  } .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con { position: fixed; left: 0px; top: 0px; width: 100%; height: 100vh; z-index: 9999; background: url(../images/Preloader_2.gif) center no-repeat #fff; }
+
+.upper-arrow{ position: fixed; bottom: 3%; right: 2%; background-color: #EB004E; width: 40px; height: 40px; border-radius: 50%; padding: 9px 13px;  z-index: 999; transition: 0.6s; }
+.upper-arrow.visible{ visibility: hidden; opacity: 0; transition: 0.6s; }
+.upper-arrow a{ text-decoration: none; outline: none; color: #fff; }
+.upper-arrow .fa-angle-up{ font-size: 20px !important; }
+.upper-arrow:hover{ cursor: pointer; background-color: #007bff; }
+
+nav.black{ background-color: rgba(0, 0, 0, 0.8); padding: 10px 0 0 0; }
+nav.black .brand a{ font-size: 19px; padding-bottom: 0; }
+nav.black .nav-items ul li a{ font-size: 15px; padding-bottom: 0; }
+
+/* Navigation */
+
+nav{ width: 100%; height: 65px; position: absolute; top: 0; left: 0; background-color: transparent; padding: 10px 0; }
+
+.brand{ display: inline-block; padding: 10px 5px 10px 70px; }
+.brand a{ color: #fff; text-decoration: none; font-size: 21px; font-weight: 600; transition: 0.6s; } .brand a strong{ color: #EB004E; } .brand a:hover{ color: #EB004E; }
+.brand.show{ visibility: hidden; opacity: 0; transition: 0.6s; }
+
+.nav-items{  display: inline; }
+.nav-items ul{ float: right; padding: 10px 5px 10px 50px; }
+.nav-items ul li{ display: inline-block; float: left; }
+.nav-items ul li:not(:first-child){ margin-left: 40px; }
+.nav-items ul li:last-child{ margin-right: 40px; }
+.nav-items ul li a{ text-decoration: none; color: #fff; font-size: 16px; transition: 0.6s; }
+
+.menu{ visibility: hidden; opacity: 0; z-index: 998; position: fixed; top: 0; left: 0; right: 0; width: 104%; height: 100%; background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)); transition: all 1s ease-out; }
+.menu ul{ position: absolute; top: 50%; transform: translateY(-50%); width: 100%; }
+.menu ul li{ display: block; width: 100%; text-align: center; margin-bottom: 30px; }
+.menu ul li a{ font-size: 17px; text-decoration: none; color: #fff; font-weight: 500; letter-spacing: 1.0px; transition: all 0.5s ease; }
+.menu.active{ visibility: visible; opacity: 1; }
+
+/* Hero Image */
+
+.main{ padding: 170px 0 200px 0; }
+.main-slider{ background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/background_2.jpg); background-repeat: no-repeat; background-size: cover; }
+.main-slider-text{ opacity: 1; padding: 10px 50px; }
+.main-slider-text h1{ font-size: 42px; font-weight: 700; color: #fff; font-family: 'Montserrat',sans-serif; text-align: justify-all; }
+.main-slider-text p{ margin-top: 30px; font-size: 17px; font-weight: lighter; color: #fff; font-family: 'Montserrat',sans-serif; }
+.main-slider-text a{ margin-top: 20px; background: transparent; color: #fff; border: 1px solid #fff; border-radius: 30px; padding: 7px 30px; transition: 0.6s; font-family: 'Montserrat',sans-serif; }
+.main-slider-text a:hover{ cursor: pointer; color: #fff; background-color: #EB004E; border-color: #EB004E; transform: scale(1.04); }
+.main-slider-image{ padding: 5px 30px; }
+
+/* Features */
+
+.container-1{ margin-top: 0px; padding: 5px; }
+.container-1 h1{ font-size: 38px; font-weight: 300; color: #000; margin-top: 90px; font-family: sans-serif; }
+.container-1 p{ font-size: 19px; color: #000; margin-bottom: 40px; font-family: 'Montserrat',sans-serif; }
+.container-2 .box-1{ transition: 0.8s; cursor: default; }
+.fa-rocket, .material-icons, .fa-eye, .fa-cubes, .fa-edit{ transition: 0.6s; }
+.container-2 .box-1:hover > .fa-rocket, .box-1:hover > .material-icons, .box-1:hover > .fa-eye, .box-1:hover > .fa-cubes, .box-1:hover > .fa-edit{ transform: translateY(-40%); }
+.container .box-1 h4{ font-size: 22px; font-weight: 500; font-family: 'Montserrat',sans-serif; } 
+.container .box-1 p{ font-size: 15px; font-family: 'Montserrat',sans-serif; }
+
+/* Different */
+
+.diff-exp{ background: linear-gradient(to bottom, rgba(51, 174, 240, 0.7), rgba(0, 0, 0, 0.7)), url(../images/background_5.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; margin-top: 80px; }
+.hovereffect{ width: 100%; max-height: 490px; margin-top: 30px; margin-bottom: 30px; border-radius: 10px; overflow: hidden; }
+.hovereffect img{ display: block; transition: all .5s linear; }
+.hovereffect:hover > img{ cursor: default; }
+.diff-exp h5{ color: #fff; font-size: 16px; font-weight: 400; font-family: 'Montserrat',sans-serif; }
+.diff-exp h1{ font-size: 42px; font-weight: 500; color: #fff; font-family: 'Montserrat',sans-serif; }
+.diff-exp p{ font-size: 15px !important; font-weight: 500; color: #fff; font-family: 'Montserrat',sans-serif; }
+.diff-exp a{ border: none; outline: none; color: #fff; border-radius: 30px; padding: 7px 25px; transition: 0.5s; background-color: #EB004E; margin-bottom: 50px; margin-top: 20px; font-family: 'Montserrat',sans-serif; }
+.diff-exp a:hover{ cursor: pointer; color: #fff; background-color: #007bff; transform: scale(1.05); }
+
+/* How it Works */
+
+.how-it-works-section{ margin-top: 80px; }
+.how-it-works h2{ font-size: 38px; font-family: 'Montserrat',sans-serif; }
+.how-it-works p{ font-size: 16px; margin-top: 20px; font-family: 'Montserrat',sans-serif; } 
+.container-3{ margin-top: 60px; }
+.container .fa-user, .container .fa-file, .container .fa-child{ font-size: 42px; color: #EB004E; margin-bottom: 30px; transition: 0.5s; }
+.container .fa-user:hover, .container .fa-file:hover, .container .fa-child:hover{ transform: translateY(-30%); }
+.container-3 h2{ font-size: 20px; font-family: 'Montserrat',sans-serif; }
+.container-3 p{ font-size: 16px; margin-top: 20px; text-align: center; font-family: 'Montserrat',sans-serif; }
+.user, .file, .child{ padding: 40px 25px 15px 25px; transition: 0.5s; }
+.user:hover, .file:hover, .child:hover{ background-color: #fff; cursor: default; }
+.user:hover > .fa-user , .file:hover > .fa-file, .child:hover > .fa-child{ transform: translateY(-50%); }
+
+/* Projects */
+
+.project{ margin-top: 100px; background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)); padding: 100px 20px; }
+.project-content h1{ color: #EB004E; text-align: center; font-size: 20px; font-weight: 800; font-family: 'Montserrat',sans-serif; }
+.project-content p{ color: #fff; text-align: center; font-size: 3.5rem; font-weight: 700; font-family: 'Montserrat',sans-serif; }
+
+/* My Projects */
+
+.box{ width: 640px; height: 457px; background: #000; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.3); }
+.image-box{ position: absolute; top: 0; left: 0; width: 100%; height: 100%; transition: 0.6s; z-index: 2; background: #000; }
+.box:hover .image-box{ transform: translateY(-100px); }
+.image-box img{ transition: 0.6s; }
+.box:hover .image-box img{ opacity: 0.5; }
+.details{ position: absolute; bottom: 0; left: 0; background: #fff; z-index: 1; width: 100%; height: 100px; box-sizing: border-box; }
+.details h2{ margin: 10px 0 0; padding: 0; text-align: center; font-family: 'Ubuntu', sans-serif; font-size: 25px; }
+.details h2 span a{ color: #262626; font-size: 13px; text-decoration: none; border: 1px solid #262626; padding: 5px 10px; border-radius: 10px; transition: 0.6s; }
+.details h2 span a:hover{ cursor: pointer; color: #fff; background-color: #007bff; border-color: #007bff; }
+
+/* Pricing */
+
+.pricing{ padding: 90px 0; margin-top: 20px; }
+.header{ margin-bottom: 70px; }
+.header h3{ font-size: 47px; font-weight: 600; font-family: 'Ubuntu', sans-serif; }
+.header p{ margin-top: 10px; font-size: 17px; font-weight: 400; font-family: 'Ubuntu', sans-serif; }
+.price-table{ text-align: center; overflow: hidden; margin: 20px; background-color: #fff; box-sizing: border-box; box-shadow: inset 0 0 40px rgba(0,0,0,0.2), 0 20px 50px rgba(0,0,0,0.5); border-radius: 20px; }
+.price-table:hover > .price-head{ background: #EB004E; transition: 0.5s; }
+.price-table .price-head{ padding: 50px; background: #007bff; border-bottom-left-radius: 50%; border-bottom-right-radius: 50%; }
+.price-table .price-head h4{ text-transform: uppercase; margin: 0; padding: 0; color: #fff; font-weight: 700; font-family: 'Ubuntu', sans-serif; }
+.price-table .price-head h2{ margin: 0; padding: 20px 0 0; font-size: 21px; color: #fff; font-family: 'Ubuntu', sans-serif; }
+.price-content{ position: relative; }
+.price-content ul{ position: relative; margin: 0; padding: 20px 0; }
+.price-content ul li{ list-style: none; font-size: 13px; font-family: 'Ubuntu', sans-serif; text-transform: uppercase; padding: 10px 0; color: #777; cursor: default; border-left: 5px solid transparent; border-right: 5px solid transparent; transition: 0.5s; }
+.price-button{ padding: 0 0 30px; }
+.price-button a{ margin-top: 20px; padding: 6px 35px; background: #007bff; color: #fff; border-radius: 25px; font-size: 15px; text-transform: uppercase; text-decoration: none; }
+.price-button a:hover{ cursor: pointer; background: #EB004E; }
+
+/* Get Started */
+
+.get-started{ background: linear-gradient(45deg, #007bff, #007bff); margin-top: 30px; padding: 40px 50px; cursor: default; }
+.get-started .get-started-text h4{ color: #fff; font-size: 16px; font-weight: 100; font-family: 'Ubuntu', sans-serif; margin-bottom: 25px; }
+.get-started .get-started-text h2{ color: #fff; font-size: 36px; font-weight: 600; font-family: 'Ubuntu', sans-serif; }
+.get-started .get-started-text p{ color: #fff; font-size: 20px; font-weight: 200; font-family: 'Ubuntu', sans-serif; margin-top: 10px; }
+.get-started-button{ padding: 20px; }
+.get-started-button .top-big-link{ float: right; }
+.get-started-button .top-big-link a{ background-color: transparent; border: 1px solid #fff; border-bottom-right-radius: 25px; border-top-right-radius: 25px; border-top-left-radius: 25px; color: #fff; font-size: 22px; font-family: 'Ubuntu', sans-serif; padding: 6px 35px; transform: translateY(50%); transition: 0.7s; }
+.get-started-button .top-big-link a:hover{ cursor: pointer; background-color: #EB004E; border-color: #EB004E; transform: translateY(50%); }
+
+/* About Me */
+
+.about{ cursor: default; padding: 35px 20px 0px 20px; }
+.about-header h2{ margin-top: 40px; font-size: 40px; font-weight: 500; font-family: 'Cabin', sans-serif; }
+.img-hovereffect{ margin-top: 90px; overflow: hidden; width: 100%; height: 75 %; box-shadow: 4px 10px 20px #000; border-radius: 10px; }
+.img-hovereffect img{ width: 100%; height: 100%; display: block; transition: all .5s linear; }
+.img-hovereffect:hover > img{ cursor: default; transform: scale(1.07); }
+.about-content{ margin-top: 70px; padding: 10px 40px; }
+.about-content h2{ font-size: 30px; font-weight: 600; font-family: 'Ubuntu', sans-serif; text-align: justify-all; }
+.about-content p{ margin-top: 20px; font-size: 17px; font-weight: 500; font-family: 'Ubuntu', sans-serif; text-align: justify-all; }
+.about-content .top-big-link a{ margin-top: 10px; background-color: #007bff; border: 1px solid #007bff; border-radius: 25px; color: #fff; font-size: 16px; font-family: 'Ubuntu', sans-serif; padding: 5px 15px; transition: 0.7s; }
+.about-content .top-big-link a:hover{ cursor: pointer; background-color: #EB004E; border-color: #EB004E; }
+
+/* Contact */         
+
+.contact{ cursor: default; margin-top: 80px; background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(../images/background_30.jpg); background-size: cover; background-repeat: no-repeat; padding: 100px 50px 50px 60px; box-shadow: 14px 4px 50px #000; }
+.contact-header h3{ color: #EB004E; font-size: 17px; font-weight: 700; text-align: center; font-family: 'Montserrat', sans-serif; text-transform: uppercase; }
+.contact-header h1{ margin-top: 15px; color: #fff; font-size: 55px; font-weight: 800; text-align: center; line-height: 1.3em; font-family: 'Montserrat', sans-serif; }
+.contact-form{ margin-top: 70px; background-color: rgba(7, 7, 9, 0.7); padding: 40px 45px; border-radius: 20px; }
+.contact-form h3{ font-size: 16px; font-weight: 600; color: #fff; font-family: 'Montserrat', sans-serif; }
+.contact-form form{ margin-top: 20px; }
+::-webkit-input-placeholder{ font-size: 15px; font-family: 'Montserrat', sans-serif; }
+#name, #email, #message, #subject{ background: transparent; color: #fff; font-size: 15px; font-family: 'Montserrat', sans-serif; display: block; width: 100%; border: none; outline: none; border-bottom: 1px solid #6c757d; margin-bottom: 10px; padding: 12px 6px;  transition: 0.6s; }
+#name:focus, #email:focus, #message:focus, #subject:focus{ border-bottom: 1px solid #EB004E; }
+#message{ min-height: 150px; max-height: 150px; }
+#send{ outline: none; margin-top: 20px; width: 100%; background: #EB004E; border: 1px solid #EB004E; color: #fff; padding: 7px 10px; border-radius: 25px; font-family: 'Montserrat', sans-serif; font-size: 15px; transition: 0.7s; }
+#send:hover{ outline: none; cursor: pointer; background: #007bff; border-color: #007bff; }
+.contact-info{ margin-top: 70px; background-color: rgba(7, 7, 9, 1); padding: 40px 45px; border-radius: 20px; }
+.contact-info h1{ font-size: 38px; font-weight: 600; color: #6c757d; font-family: 'Montserrat', sans-serif; }
+.contact-info h1 strong{ color: #EB004E; }
+.contact-info p{ font-size: 16px; font-weight: 400; color: #6c757d; font-family: 'Montserrat', sans-serif; text-align: justify-all; }
+.contact-info p:nth-child(2){ margin-top: 30px; }
+
+/* Footer */
+
+.footer{ margin-top: 70px; background: #fff; cursor: default; }
+.footer h3{ color: #EB004E; font-size: 50px; font-weight: 800; font-family: 'Cabin', sans-serif; }
+.footer-text{ margin-top: 20px; }
+.t-and-c{ text-align: center; }
+.t-and-c a{ font-size: 17px; font-family: 'Montserrat', sans-serif; color: #007bff; text-decoration: none; outline: none; padding-bottom: 4px; transition: 0.7s; }
+.t-and-c a:hover{ cursor: pointer; }
+.footer p{ margin-top: 20px; font-size: 14px; font-weight: 200; font-family: 'Montserrat', sans-serif; color: #000; }
+
+/* Media Screens */
+
+@media (min-width: 1801px){
+    .main{ padding: 180px 0; }
+    .main-slider-text h1{ font-size: 55px; } .main-slider-text p{ font-size: 25px; } .main-slider-text .top-big-link a{ font-size: 23px; }
+    .container-1 h1{ font-size: 45px; } .container-1 p{ font-size: 25px; }
+    .container-1 .container, .how-it-works-section .container{ width: 1650px; max-width: 100%; }
+    .box-1 h4{ font-size: 28px !important; } .box-1 p{ font-size: 21px !important; }
+    .diff-exp{ padding: 20px 25px; }
+    .diff-exp h5{ font-size: 20px !important; } .diff-exp h1{ font-size: 50px !important; } .diff-exp p{ font-size: 23px !important; }
+    .diff-exp .top-big-link a{ font-size: 20px !important; } .hovereffect{ max-width: 400px; margin-left: 40px; } 
+    .how-it-works h2{ font-size: 42px; } .how-it-works p{ font-size: 22px; }
+    .container-3 h2{ font-size: 30px; opacity: 1; } .container-3 p{ font-size: 22px; opacity: 1; }
+    .project-content h1{ font-size: 28px; } .project-content p{ font-size: 4rem; }
+    .header h3{ font-size: 55px; } .header p{ font-size: 30px; }
+    .price-head h4{ font-size: 32px; } .price-head h2{ font-size: 25px !important; } .price-content ul li{ font-size: 18px; }
+    .price-button a{ font-size: 20px; }
+    .get-started-text h4{ font-size: 25px !important; } .get-started-text h2{ font-size: 48px !important; }
+    .get-started-text p{ font-size: 25px !important; } .get-started-button a{ font-size: 30px !important; }
+    .about-header h2{ font-size: 50px; } .about-content h2{ font-size: 41px; } .about-content p{ font-size: 25px; } .about-content a{ font-size: 20px !important; }
+    .contact-header h3{ font-size: 28px; } .contact-header h1{ font-size: 4.2rem; } 
+    .contact-info h1{ font-size: 45px; } .contact-info p{ font-size: 25px; }
+    .contact-form h3{ font-size: 25px; } ::-webkit-input-placeholder{ font-size: 22px; }
+    #name, #email, #message, #subject{ font-size: 22px; padding: 20px 10px; } #send{ font-size: 20px; }
+    .footer h3{ font-size: 60px; } .t-and-c a{ font-size: 25px; } .footer p{ font-size: 20px; }
+} 
+
+@media (max-width: 1293px){
+    .main-slider-text h1{ font-size: 30px; } .main{ padding: 150px 0; }
+    .diff-exp h1{ font-size: 28px; } .diff-exp p{ font-size: 16px; }
+    .project-content p{ font-size: 2.8rem; }
+    .get-started-text h2{ font-size: 26px !important; } .get-started-text p, .get-started-button a{ font-size: 16px !important; }
+} 
+
+@media (max-width: 1024px){
+    .main-slider-text h1{ font-size: 26px; } .main{ padding: 120px 0; }
+    .diff-exp h1{ font-size: 24px; } .diff-exp p{ font-size: 14px; }
+    .project-content p{ font-size: 2.4rem; }
+    .get-started-text h2{ font-size: 22px !important; } .get-started-text p, .get-started-button a{ font-size: 17px !important; }
+    .about-part .col-md-4, .about-part .col-md-8{ flex: 0 0 90%; max-width: 90%; margin: 0 auto; }
+    .contact-header h1{ font-size: 40px; }
+}
+
+@media (max-width: 899px){
+    .main{ padding: 120px 0 10px 0;} .main .col-md-7{ flex: 0 0 100%; max-width: 100%; }
+    .main-slider-text h1{ font-size: 24px; } 
+    .main-slider-text p{ font-size: 17px; }
+    .main-slider-image{ visibility: hidden; }
+    .container-1 h1{ font-size: 35px; }
+    .diff-exp h5{ font-size: 14px; margin-top: 35px; } .diff-exp h1{ font-size: 22px; } .diff-exp p{ font-size: 14px; }
+    .diff-exp a{ font-size: 14px; margin-top: 5px; padding: 7px 25px; }
+    .how-it-works-section .col-md-6{ flex: 0 0 80%; max-width: 80%; }
+    .how-it-works p{ font-size: 17px; }
+    .container-3 .col-md-4{ flex: 0 0 75%; max-width: 75%; margin:  0 auto; }
+    .project-content p{ font-size: 2rem; }
+    .header h3{ font-size: 35px; } .price-content ul li{ font-size: 15px; }
+    .pricing .col-md-4{ flex: 0 0 90%; max-width: 90%; margin: 0 auto; }
+    .get-started .col-md-6{ flex: 0 0 90%; max-width: 90%; margin: 0 auto; }
+    .get-started-text h2{ font-size: 25px !important; text-align: center; }
+    .get-started-text h4{ font-size: 17px; text-align: center; }
+    .get-started-text p, .get-started-button a{ font-size: 20px !important; text-align: center; }
+    .get-started-button .top-big-link{ float: none; text-align: center !important; }
+    .contact-header h1{ font-size: 35px; }
+    .contact .col-md-4, .contact .col-md-8{ flex: 0 0 90%; max-width: 90%; margin: 0 auto; } .contact-info{ margin-top: 30px !important; }
+    .footer h3{ font-size: 35px; }
+}
+
+@media (max-width: 847px){
+    .upper-arrow{ display: none; }
+    nav{ height: 45px; } 
+    .brand a{ font-size: 16px !important; transition: 0.6s; } nav.black .brand{ padding-top: 0; transition: 0.3s; }
+    .nav-items{ display: none; }
+    .toggle{ position: fixed; right: 10px; top: 0px; display: block; width: 48px; height: 48px; cursor: pointer; z-index: 9999; border-radius: 50%; transition: 0.2s; }
+    .toggle i{ display: block; width: 20px; height: 2px; background: #fff; border-radius: 2px; margin-left: 14px; transition: 0.6s; }
+    .toggle i:nth-child(1){ margin-top: 16px; }     
+    .toggle i:nth-child(2){ margin-top: 4px; opacity: 1; }      
+    .toggle i:nth-child(3){ margin-top: 4px; }
+    .toggle.on .one{ transform: rotate(45deg) translateX(1px) translateY(2px); }
+    .toggle.on .two{ opacity: 0; }
+    .toggle.on .three{ transform: rotate(-45deg) translateX(6px) translateY(-8px); }  
+  
+}
+
+@media (max-width: 767px){
+    .main{ height: 80vh; padding: 120px 0 0px 0; } .main .col-md-7{ flex: 0 0 100%; max-width: 100%; }
+    .main-slider-text h1{ font-size: 22px;} 
+    .main-slider-text p{ font-size: 17px;}
+    .main-slider-image{ display: none; }
+    .container-1 h1{ font-size: 28px; } .container-1 p{ font-size: 15px; }
+    .diff-exp .hovereffect{ display: none; }
+    .diff-exp{ padding: 0px 15px; } .diff-exp h5{ font-size: 12px; margin-top: 35px; } .diff-exp h1{ font-size: 24px; } .diff-exp p{ font-size: 13px; }
+    .diff-exp a{ font-size: 14px; margin-top: 5px; padding: 7px 25px; }
+    .how-it-works h2{ font-size:25px; font-weight: 600; } .how-it-works p{ font-size: 15px !important; }
+    .how-it-works-section .col-md-6{ flex: 0 0 75%; max-width: 75%; }
+    .container-3 .col-md-4{ flex: 0 0 100%; max-width: 100%; margin:  0 auto; }
+    .container-3 h2{ font-size: 21px; } .container-3 p{ font-size: 15px; } .fa-user, .fa-file, .fa-child{ font-size: 35px !important; } 
+    .project-content h1{ font-size: 15px; } .project-content p{ font-size: 2rem; } .box{ margin: 0 auto; border-radius: 20px; } .box:nth-child(1), .box:nth-child(2){ margin-bottom: 20px; }
+    .box .image-box{ transform: translateY(-100px); } .box .image-box img{ opacity: 0.5; }
+    .pricing .col-md-4{ flex: 0 0 80%; max-width: 80%; margin: 0 auto; } .header h3{ font-size: 31px !important; } .header p{ font-size: 16px; }
+    .get-started-text h2{ font-size: 20px !important; } .get-started-text h4{ font-size: 14px !important; }
+    .get-started-text p, .get-started-button a{ font-size: 16px !important; }
+    .about-header h2{ font-size: 30px; } .about-content h2{ font-size: 22px; } .about-content p{ font-size: 14px; } 
+    .about-content a{ font-size: 13px !important; }
+    .contact-header h3{ font-size: 15px; } .contact-header h1{ font-size: 30px; } .contact-info{ margin-top: 30px !important; }
+	.contact-info h1{ font-size: 25px; } .contact-info p{ font-size: 15px; }
+	.footer h3{ font-size: 30px; }
+}
+
+@media (max-width: 640px){ 
+	.main{ padding: 100px 0; }
+	.main-slider-text h1{ font-size: 17px;} 
+	.main-slider-text p{ font-size: 12px;}
+	.main-slider-text .top-big-link a{ font-size: 12px !important; margin-top: 10px; }
+	.project-content p{ font-size: 1.8rem; }
+	.about-content h2{ margin-top: 35px; }
+}
+
+@media (max-width: 530px){
+  .brand{ display: inline-block; padding: 10px 5px 10px 55px; } .brand a{ font-size: 15px !important; }
+	.main{ padding: 80px 0 0 0; } .main-slider-text{ padding-left: 40px; } 
+	.main-slider-text h1{ font-size: 17px;} 
+	.main-slider-text p{ font-size: 12px;} .main-slider-text .top-big-link a{ font-size: 12px !important; margin-top: 10px; }
+	.how-it-works-section .col-md-6{ flex: 0 0 100%; max-width: 100%; }
+	.project-content p{ font-size: 1.3rem; }
+	.get-started{ padding: 30px 0; }
+	.get-started-text h2{ font-size: 20px !important; }
+	.get-started-text p, .get-started-button a{ font-size: 14px !important; }
+	.about-content{ padding: 10px 20px; }
+	.contact{ padding: 80px 0 30px 0; } .contact .col-md-9, .contact .col-md-8{ flex: 0 0 100%; max-width: 100%; margin: 0 auto; }
+    .contact-header h3{ font-size: 13px; } .contact-header h1{ font-size: 25px; }
+}  
+
+@media (max-width: 402px){
+  .brand{ display: inline-block; padding: 10px 5px 10px 35px; } .brand a{ font-size: 15px !important; }
+	.main{ height: 80vh; padding: 80px 0 0 0; } .main-slider-text{ padding-left: 20px; padding-right: 5px; }
+	.main-slider-text h1{ font-size: 17px;} 
+	.main-slider-text p{ font-size: 11px;}
+	.main-slider-text .top-big-link a{ font-size: 10px !important; margin-top: 10px; }
+	.how-it-works-section .col-md-6{ flex: 0 0 100%; max-width: 100%; }
+	.how-it-works h2{ font-size: 23px; } .how-it-works p{ font-size: 12px; }
+	.container-3 h2{ font-size: 18px; } .container-3 p{ font-size: 13px; } .fa-user, .fa-file, .fa-child{ font-size: 30px !important; }
+	.project-content p{ font-size: 1rem; }
+	.header h3{ font-size: 25px !important; } .header p{ font-size: 14px; }
+    .pricing .col-md-4{ flex: 0 0 100%; max-width: 100%; }
+    .price-head h4{ font-size: 20px; } .price-head h2{ font-size: 15px !important; } .price-content ul li, .price-button a{ font-size: 12px !important; }
+    .get-started-text h2{ font-size: 15px !important; text-align: center; }
+    .get-started-text p, .get-started-button a{ font-size: 13px !important; text-align: center; }
+    .about-part .col-md-4, .about-part .col-md-8{ flex: 0 0 100%; max-width: 100%; margin: 0 auto; }
+    .contact{ padding: 80px 0 20px 0; }
+	.contact .col-md-4, .contact .col-md-8{ flex: 0 0 100%; max-width: 100%; padding: 35px 30px; } .contact-form{ padding: 35px 25px; }
+	.contact-header h3{ font-size: 13px; } .contact-header h1{ font-size: 1.2rem; } 
+	.contact-info h3{ font-size: 18px; } .contact-info p{ font-size: 13px; } .contact-form{ padding: 30px 15px; }
+	.contact-form h3{ font-size: 13px; } ::-webkit-input-placeholder{ font-size: 12px !important; }
+	#name, #email, #message, #subject{ font-size: 13px; } #send{ font-size: 11px; }
+	.footer h3{ font-size: 30px; } .t-and-c a{ font-size: 14px; } .footer p{ font-size: 11px; }
+}
+
+@media (max-width: 330px){
+    .main{ padding: 80px 0 0 0;  } .main-slider-text{ padding-left: 20px; padding-right: 5px; }
+    .main-slider-text h1{ font-size: 15px;} 
+    .main-slider-text p{ font-size: 11px;}
+    .main-slider-text .top-big-link a{ font-size: 10px !important; margin-top: 10px; }
+    .pricing .col-md-4{ flex: 0 0 100%; max-width: 100%; }
+    .about-part{ padding: 10px 0px; } .about-content{ padding: 0 15px; }
+    .footer h3{ font-size: 25px; } .t-and-c a{ font-size: 13px; } .footer p{ font-size: 10px; margin-top: 5px; }
+}

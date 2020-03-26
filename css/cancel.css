@@ -1,0 +1,37 @@
+#main-header{
+	background-color: #007bff;
+}
+
+#submit{
+	background-color: #007bff;
+	color: #fff;
+}
+
+@media (max-width: 767px){
+	.navbar-toggler {
+		outline: none !important;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+	#main-header .col-md-6{
+		flex: 0 0 100%;
+    	max-width: 100%;
+	}
+
+	#sections .col-md-3{
+		flex: 0 0 33.33%;
+    	max-width: 33.33%;
+	}
+
+	form .col-md-3{
+		flex: 0 0 33.33%;
+    	max-width: 33.33%;
+	}
+}
+
+@media (max-width: 575px){
+	.navbar-toggler {
+		position: sticky;
+	}
+}

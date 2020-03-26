@@ -1,0 +1,79 @@
+#main-header{
+	background-color: #007bff;
+}
+
+#add{
+	background-color: #007bff;
+	color: #fff;
+}
+
+#add:hover{
+	cursor: pointer;
+	background-color: transparent;
+	color: #007bff;
+	border: 1px solid #007bff;
+}
+
+#skip{
+	background-color: transparent;
+	color: #007bff;
+	border: 1px solid #007bff;
+}
+
+#skip:hover{
+	cursor: pointer;
+	background: #007bff;
+	color: #fff;
+}
+
+.form-group{
+	margin-bottom: 40px;
+}
+
+.file-upload-box{
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	padding: 20px 25px;
+}
+
+.file-upload-box-content{
+	margin: 0 auto !important;
+}
+
+.upload-text{
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+
+::-webkit-file-upload-button{
+	background-color: transparent;
+	border: 1px solid #007bff;
+	color: #007bff;
+	border-radius: 10px;
+	padding: 5px 15px;
+	transition: 0.5s;
+	outline: none;
+}
+
+::-webkit-file-upload-button:hover{
+	cursor: pointer;
+	background-color: #007bff;
+	color: #fff;
+}
+
+.file-button{
+	color: #EB004E;
+}
+
+@media (max-width: 767px){
+	.navbar-toggler {
+		outline: none !important;
+	}
+}
+
+@media (max-width: 575px){
+	.navbar-toggler {
+		position: sticky;
+	}
+}

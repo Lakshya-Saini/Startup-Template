@@ -1,0 +1,91 @@
+html{
+	height: 100% !important;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	min-height: 100% !important;
+	position: relative;
+	cursor: default;
+}
+
+body::after {
+  content: '';
+  display: block !important;
+  height: 60px !important; /* Set same as footer's height */
+}
+
+#main-header
+{
+	background-color: #007bff;
+}
+
+#add{
+	background-color: transparent;
+	color: #007bff;
+	border: 1px solid #007bff;
+}
+
+#add:hover{
+	cursor: pointer;
+	background-color: #007bff;
+	color: #fff;
+	border: 1px solid #007bff;
+}
+
+#view-projects{
+	background-color: transparent;
+	color: #007bff;
+	border: 1px solid #007bff;
+}
+
+#view-projects:hover{
+	cursor: pointer;
+	background-color: #007bff;
+	color: #fff;
+	border: 1px solid #007bff;
+}
+
+#cancel-projects{
+	background-color: transparent;
+	color: #007bff;
+	border: 1px solid #007bff;
+}
+
+#cancel-projects:hover{
+	cursor: pointer;
+	background-color: #007bff;
+	color: #fff;
+	border: 1px solid #007bff;
+}
+
+#pending, #total{
+	background-color: #007bff;
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
+	width: 100% !important;
+	height: 60px !important;
+}
+
+footer p{
+	font-size: 15px !important;
+}
+
+@media (max-width: 991px){
+	.desc{
+		display: none !important;
+	}
+}
+
+@media (max-width: 767px){
+	.navbar-toggler {
+		outline: none !important;
+	}
+	#add,#view-projects{
+		margin-bottom: 10px;
+	}
+}

@@ -1,0 +1,14 @@
+body{
+	font-family: 'Monteserrat', sans-serif;
+	min-width: 100%;
+}
+
+.container-fluid{
+	padding-right: 30px;
+  	padding-left: 30px;
+  	text-align: justify-all !important;
+}
+
+.lead{
+	font-size: 15px !important;
+}

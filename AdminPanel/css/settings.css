@@ -1,0 +1,54 @@
+html{
+	height: 100% !important;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	min-height: 100% !important;
+	position: relative;
+}
+
+body::after {
+  content: '';
+  display: block !important;
+  height: 50px !important; /* Set same as footer's height */
+}
+
+#main-header{
+	background-color: #007bff;
+}
+
+#save{
+	background-color: #007bff;
+	color: #fff;
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+	#sections .col-md-3{
+		flex: 0 0 33.33333%;
+    	max-width: 33.33333%;
+	}
+}
+
+@media (max-width: 767px){
+	#sections a.btn{
+		margin-bottom: 10px;
+	}
+	form h5{
+		font-size: 15px;
+		margin-top: 7px;
+	}
+}
+
+@media (max-width: 767px){
+	.navbar-toggler {
+		outline: none !important;
+	}
+}
+
+@media (max-width: 575px){
+	.navbar-toggler {
+		position: sticky;
+	}
+}
