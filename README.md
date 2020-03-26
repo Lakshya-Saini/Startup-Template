@@ -1,4 +1,4 @@
-# Portfolio-Template
+# Startup-Template
 Flexcreo - A Template for a startup or for an individual porfolio to show their skills and to get projects.
 
 #
