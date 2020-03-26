@@ -1,5 +1,5 @@
 # Portfolio-Template
-Template for a Portfolio website where you can show your skills and projects to your clients.
+Flexcreo - A Template for a startup or for an individual porfolio to show their skills and to get projects.
 
 #
 ## Features:
